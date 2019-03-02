@@ -34,10 +34,15 @@ text.addEventListener("dbclick", dis);
  	copy.innerHTML = "DO NOT COPY!";
  }
 
- let right = document.getElementById("body");
+ let right = document.getElementByTagName("BODY");
+ let rightClick = right[0]
 
- right.addEvenListener("contextmenu", fart)
+ rightClick.addEvenListener("contextmenu", img)
 
- function fart () {
- 	right.style.background = url("images/pokemonBG2.png");
+ function img () {
+ 	rightClick.style.background = url("images/pokemonBG2.png");
  }
+
+
+
+
